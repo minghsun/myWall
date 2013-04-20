@@ -1,0 +1,285 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+/* line 17, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Applications/Fire.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/mywall.scss */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 8, ../sass/mywall.scss */
+textarea {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* line 12, ../sass/mywall.scss */
+div.wallWrapper {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #eee;
+}
+
+/* line 19, ../sass/mywall.scss */
+.newBlock {
+  float: left;
+  position: absolute;
+}
+/* line 22, ../sass/mywall.scss */
+.newBlock > .newBlockContent {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px;
+}
+/* line 25, ../sass/mywall.scss */
+.newBlock > .newBlockContent textarea {
+  display: none;
+  margin: 5px;
+  width: 50px;
+  height: 20px;
+  padding: 3px 5px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 36, ../sass/mywall.scss */
+.newBlock > .newBlockContent p {
+  display: none;
+  margin: 5px;
+  padding: 3px 5px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+}
+/* line 46, ../sass/mywall.scss */
+.newBlock i {
+  position: absolute;
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+/* line 52, ../sass/mywall.scss */
+.newBlock i.delete {
+  right: 0%;
+  top: 0px;
+  background-color: #F99;
+  background-image: url(../images/close.svg);
+  background-size: 90% 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 63, ../sass/mywall.scss */
+.newBlock:hover > .newBlockContent {
+  border: 2px dotted #999999;
+}
+/* line 66, ../sass/mywall.scss */
+.newBlock:hover i {
+  display: inline-block;
+}
+
+/* line 71, ../sass/mywall.scss */
+.arrow {
+  float: left;
+  position: absolute;
+  height: 40px;
+  text-align: right;
+  -webkit-transform-origin: 0% 0%;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -o-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+/* line 78, ../sass/mywall.scss */
+.arrow i {
+  position: absolute;
+  display: none;
+  width: 10px;
+  height: 10px;
+}
+/* line 84, ../sass/mywall.scss */
+.arrow i.delete {
+  width: 15px;
+  height: 15px;
+  right: 0%;
+  top: 0px;
+  background-color: #F99;
+  background-image: url(../images/close.svg);
+  background-size: 90% 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 95, ../sass/mywall.scss */
+.arrow i.head {
+  display: inline-block;
+  position: relative;
+  content: '';
+  top: 9px;
+  right: -5px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8px 0 8px 15px;
+  border-color: transparent transparent transparent #ff9999;
+}
+/* line 107, ../sass/mywall.scss */
+.arrow i.center {
+  cursor: move;
+  left: 50%;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff8080;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 116, ../sass/mywall.scss */
+.arrow i.tail {
+  left: 0%;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background-color: #F99;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 125, ../sass/mywall.scss */
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  /*
+  i.head{
+  	top: 5px;
+  	right: -10px;
+  	border-width: 12px 0 12px 21px;
+  }
+  */
+}
+/* line 127, ../sass/mywall.scss */
+.arrow:hover i {
+  display: inline-block;
+}
+
+/* line 139, ../sass/mywall.scss */
+.arrow:before {
+  display: block;
+  position: relative;
+  top: 18px;
+  content: '';
+  height: 4px;
+  width: 100%;
+  background-color: #f99;
+}
+
+/* line 148, ../sass/mywall.scss */
+.imageBlock {
+  float: left;
+  position: absolute;
+}
+/* line 151, ../sass/mywall.scss */
+.imageBlock > img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2px;
+  max-width: 500px;
+  max-height: 400px;
+}
+/* line 157, ../sass/mywall.scss */
+.imageBlock i {
+  position: absolute;
+  display: none;
+  width: 15px;
+  height: 15px;
+}
+/* line 163, ../sass/mywall.scss */
+.imageBlock i.delete {
+  right: 0%;
+  top: 0px;
+  background-color: #F99;
+  background-image: url(../images/close.svg);
+  background-size: 90% 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* line 175, ../sass/mywall.scss */
+.imageBlock:hover > img {
+  border: 2px dotted #999999;
+}
+/* line 178, ../sass/mywall.scss */
+.imageBlock:hover i {
+  display: block;
+}
